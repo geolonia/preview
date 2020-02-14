@@ -9,7 +9,7 @@
   }
 
   var e = document.getElementById( 'map' )
-  e.dataset.style = styleUrl.replace( '%s', stylePath.join( '/' ) )
+  e.dataset.style = style
 
   var map = new geolonia.Map( document.getElementById( 'map' ) );
 })()
