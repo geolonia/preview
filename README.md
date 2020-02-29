@@ -10,4 +10,4 @@ https://geolonia.github.io/preview/#<:username>/<:repository>
 
 Following is the URL for `geolonia/basic`
 
-[https://geolonia.github.io/preview/#basic/basic](https://geolonia.github.io/preview/#basic/basic)
+[https://geolonia.github.io/preview/#geolonia/basic](https://geolonia.github.io/preview/#geolonia/basic)
