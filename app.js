@@ -7,7 +7,7 @@
     let style
 
     if (location.hash) {
-      if (location.hash.match(/^https:\/\//)) {
+      if (location.hash.match(/^#https:\/\//)) {
         style = location.hash.replace( /^#/, '' )
       } else {
         const stylePath = location.hash.replace( /^#/, '' ).split( /\// )
@@ -21,6 +21,7 @@
   }
 
   const style = getStyle()
+  console.log(style)
 
   const e = document.getElementById( 'map' )
   e.dataset.style = style
