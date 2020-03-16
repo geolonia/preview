@@ -21,7 +21,6 @@
   }
 
   const style = getStyle()
-  console.log(style)
 
   const e = document.getElementById( 'map' )
   e.dataset.style = style
