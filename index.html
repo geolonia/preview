@@ -8,14 +8,20 @@
 </head>
 <body>
 
-<div
-  id="map"
-  data-gesture-handling="off"
-  data-hash="off"
-  data-marker="off"
-  data-style="geolonia/basic"
-  data-geolocate-control="on"
-></div>
+  <div id="left">
+    <div
+      id="map"
+      data-gesture-handling="off"
+      data-hash="off"
+      data-marker="off"
+      data-style="geolonia/basic"
+      data-geolocate-control="on"
+    ></div>
+  </div>
+
+  <div id="right">
+    <pre id="json"></pre>
+  </div>
 
 <script type="text/javascript" src="https://api.geolonia.com/dev/embed?geolonia-api-key=YOUR-API-KEY"></script>
 <script src="app.js"></script>
