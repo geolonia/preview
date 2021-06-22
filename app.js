@@ -4,11 +4,12 @@ const getStyle = () => {
 
   let style
 
-  if (location.hash) {
-    if (location.hash.match(/^#https:\/\//)) {
-      style = location.hash.replace( /^#/, '' )
+  const styleIdentifier = new URLSearchParams(location.search).get('style')
+  if (styleIdentifier) {
+    if (styleIdentifier.match(/^https:\/\//)) {
+      style = styleIdentifier
     } else {
-      const stylePath = location.hash.replace( /^#/, '' ).split( /\// )
+      const stylePath = styleIdentifier.split( /\// )
       style = styleUrl.replace( '%s', stylePath.join( '/' ) )
     }
   } else {
@@ -17,7 +18,6 @@ const getStyle = () => {
 
   return style
 }
-
 const style = getStyle()
 
 const e = document.getElementById( 'map' )
