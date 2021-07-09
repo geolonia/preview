@@ -31,7 +31,6 @@ const getStyle = async () => {
   }
 
   if (style.includes("/master/style.json")) {
-    console.log(1);
     const response = await fetch(style, { method: "HEAD" });
     if (response.status > 399) {
       const fallbackedStyle = style.replace(
