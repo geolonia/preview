@@ -62,10 +62,7 @@ const main = async () => {
 
   map.on("load", () => {
     const dumpFeature = (event) => {
-      const features = map
-        .queryRenderedFeatures()
-        .filter((feature) => feature.geometry.type === "Point")
-        .map((feature) => feature.properties);
+      const features = map.queryRenderedFeatures(event.point);
       console.log(features);
       const jsonContainer = document.getElementById("json");
       jsonContainer.innerText = JSON.stringify(features, null, "  ");
